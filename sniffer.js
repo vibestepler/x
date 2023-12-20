@@ -15,7 +15,7 @@ let headers = $request.headers;
 if (url == 'https://api.x-storm.com/app/user-profile/') {
   var uid = headers["uid"];
   var time = headers["t"];
-  var str = `{"uid": "${uid}", "userID": 10086, "isVip": 1, "member_type": 2, "member_title": "\u0076\u0069\u0062\u0065", "expire_on":"\u0076\u0069\u0062\u0065", 
+  var str = `{"uid": "${uid}", "userID": 10086, "isVip": 1, "member_type": 2, "member_title": "\u006F\u006B\u0070\u0075\u0073\u0073\u0079\u0040\u0062\u0069\u006E\u0073\u0063\u0063\u0068\u0075\u0062\u0073\u002E\u0063\u006F\u006D", "expire_on":"\u0076\u0069\u0062\u0065\u0073\u0074\u0065\u0070\u006C\u0065\u0072", 
             "auth_quantity": 9999999, "auth_mail": "vibe@ok.com", "is_primary": 0, "trail_status": 0, "function_list": [1, 2, 3, 4, 5], "can_deauthorize": true, 
             "timestamp": ${time}, "ts": 1}`;
   var key = '29hgfhdfv78344' + uid;
