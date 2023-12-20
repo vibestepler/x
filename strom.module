@@ -7,5 +7,5 @@ hostname = %APPEND% *.x-storm.com
 
 [Script]
 
-sniffer = type=http-response, pattern=^https?:\/\/api\.x-storm\.com\/app\/user-profile\/$, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/sniffer.js, requires-body=true, max-size=-1, timeout=60
+sniffer = type=http-response, pattern=^https?:\/\/api\.x-storm\.com\/app\/user-profile\/$, script-path=https://raw.githubusercontent.com/vibestepler/x/main/sniffer.js, requires-body=true, max-size=-1, timeout=60
 
