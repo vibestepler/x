@@ -1,0 +1,11 @@
+#!name=sniffer
+#!desc=sniffer
+
+[MITM]
+
+hostname = %APPEND% *.x-storm.com
+
+[Script]
+
+sniffer = type=http-response, pattern=^https?:\/\/api\.x-storm\.com\/app\/user-profile\/$, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/sniffer.js, requires-body=true, max-size=-1, timeout=60
+
