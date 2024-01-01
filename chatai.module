@@ -1,0 +1,8 @@
+#!name=chatai
+#!desc=chatai
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
+
+[Script]
+chatai = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=, requires-body=true, max-size=-1, timeout=60
