@@ -5,4 +5,4 @@
 hostname = %APPEND% buy.itunes.apple.com
 
 [Script]
-chatai = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=, requires-body=true, max-size=-1, timeout=60
+chatai = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/vibestepler/x/main/chatai.js, requires-body=true, max-size=-1, timeout=60
