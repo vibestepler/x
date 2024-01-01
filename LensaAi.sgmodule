@@ -1,0 +1,8 @@
+#!name=LensaAI
+#!desc=LensaAI
+
+[MITM]
+hostname = %APPEND% appapi.neuralprisma.com
+
+[Script]
+LensaAI = type=http-response, pattern=^https?:\/\/appapi\.neuralprisma\.com\/receipt\/ios\/status\/lensa, script-path=https://raw.githubusercontent.com/vibestepler/x/main/LensaAI.js, requires-body=true, max-size=-1, timeout=60
